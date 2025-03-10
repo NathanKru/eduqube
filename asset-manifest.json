@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/eduqube/static/css/main.444fbb2b.css",
+    "main.js": "/eduqube/static/js/main.2662252e.js",
+    "static/js/453.03bea0c2.chunk.js": "/eduqube/static/js/453.03bea0c2.chunk.js",
+    "static/media/bg.png": "/eduqube/static/media/bg.c4541dc8c6152ba1495d.png",
+    "static/media/logo.svg": "/eduqube/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/eduqube/index.html",
+    "main.444fbb2b.css.map": "/eduqube/static/css/main.444fbb2b.css.map",
+    "main.2662252e.js.map": "/eduqube/static/js/main.2662252e.js.map",
+    "453.03bea0c2.chunk.js.map": "/eduqube/static/js/453.03bea0c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.444fbb2b.css",
+    "static/js/main.2662252e.js"
+  ]
+}
