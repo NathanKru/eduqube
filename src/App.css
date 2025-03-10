@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+
+
+
+.background-container {
+  position: relative;
+  height: 60vh; /* Full height of the screen */
+  background-image: url('../public/bg.png'); /* Replace with your image path */
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background scroll with content */
+  background-position: center;
+  overflow: hidden;
+}
+/* .content{
+  margin-left: 3em;
+  margin-right: 3em;
+} */
+
+.content {
+  padding: 0 20px; /* Adds spacing on the left and right */
+  text-align: center; /* Centers the text */
+  margin: 0 auto; /* Centers the content horizontally */
+  max-width: 1600px; /* Optional: limit the max width for a neat look */
+}
+.spacing{
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.side-spacing{
+  padding: 0 20px;
+}
+.side-spacing2{
+  padding: 0 50px;
+}
+.turq{
+  color: #4ec1b2 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center-text {
+  justify-content: center; /* Horizontally centers the text */
+  align-items: center;     /* Vertically centers the text */
+  height: 100%;            /* Ensure it takes up the full height of its container */
+  text-align: center;      /* Centers text inside the element */
 }
