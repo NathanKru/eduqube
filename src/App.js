@@ -8,7 +8,7 @@ function App() {
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
           <div class="col-md-3 mb-2 mb-md-0">
             <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-              <img src="/logo.png" alt="Your Logo" width="50" height="50"></img>
+              <img src={`${process.env.PUBLIC_URL}/EQlogo.png`} alt="Your Logo" width="50" height="50"></img>
             </a>
           </div>
 
@@ -21,8 +21,8 @@ function App() {
           </ul>
 
           <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Login</button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
+            <button type="button" class="btn btn-outline-primary me-2 btn-turq">Login</button>
+            <button type="button" class="btn btn-primary btn-turq">Sign-up</button>
           </div>
         </header>
       </div>
@@ -203,7 +203,198 @@ function App() {
           </div>
         </div>
       </div>
+      <section id="call-to-action" class="call-to-action section dark-background">
 
+        <div class="container">
+          <br></br>
+          <div class="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-9 text-center text-xl-start">
+              <h3 class="turq">Call To Action</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <br></br>
+        </div>
+
+      </section>
+      <br></br>
+      <div>
+        <div class="container">
+            <h2 className="pb-2 turq center-text pb-2">Our Offerings</h2>
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
+              <img src={`${process.env.PUBLIC_URL}/den1.jpg`} class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-7 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <h4>Tailored social media marketing solutions designed to enhance brand visibility, engagement, and lead generation. </h4>
+              <p class="fst-italic">
+              Our services include content creation, audience targeting, analytics tracking, and strategic social media campaigns. With a focus on engaging storytelling, high-quality visuals, and audience interaction, we partner with businesses to establish a strong digital presence.
+              Having a well-planned marketing strategy is crucial for standing out in a competitive market. 
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                <li><i class="bi bi-check"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                <li><i class="bi bi-check"></i> <span>Ullam est qui quos consequatur eos accusamus.</span></li>
+              </ul>
+            </div>
+          </div>
+          <br></br>
+            <hr></hr>
+            <br></br>
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+              <img src={`${process.env.PUBLIC_URL}/den2.jpg`} class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-7 order-2 order-md-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <h3>Heading</h3>
+              <p class="fst-italic">
+              Without a strategy, social media efforts can feel directionless and ineffective. A structured approach ensures that content resonates with the target audience, maximizes reach, and drives meaningful interactions—ultimately leading to increased brand loyalty and sales. 
+              Our expertise in social media analytics allows us to continuously refine strategies. 
+              </p>
+              <p>EduQube’s clients benefit from data-driven insights, creative execution, and a results-focused approach that 
+              ensures their brand doesn't just participate in the online conversation but dominates it. .</p>
+            </div>
+          </div>
+            <br></br>
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out">
+              <img src={`${process.env.PUBLIC_URL}/den1.jpg`} class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-7 aos-init aos-animate" data-aos="fade-up">
+              <h3 class="turq pb-2">We don’t just create content—we strategically craft high-impact marketing solutions that drive real results.</h3>
+              <p>With a focus on thoughtful planning, high-quality visuals, and compelling storytelling, we ensure your brand
+                 not only stands out but also resonates with your audience. </p>
+                <p>
+                Our expertise lies in delivering engaging, results-driven content that positions your business ahead of the competition 
+                in an ever-evolving digital landscape.</p>
+            </div>
+          </div>
+          <br></br>
+            <br></br>
+          <h2 className="pb-2 turq center-text pb-2">“Exceptional ideas delivered with exceptional service”</h2>
+
+        </div>
+      </div>
+
+      <br></br>
+      <br></br>
+      <div>
+        <section id="contact" class="contact section">
+          <div class="container section-title aos-init aos-animate center-text" data-aos="fade-up">
+            <h2 class="turq center-text">Contact</h2>
+            <h3 class="turq center-text">Your Partner in Innovation + Integration</h3>
+            <br></br>
+            <p>Transform your business with in-person or virtual opportunities designed to maximise your global accessibility to LifeQube’s
+              full spectrum of insight, expert guidance and tools. Get what you need, when — and how — you need it.</p>
+          </div>
+          <br></br>
+
+          <div className="container aos-init aos-animate" data-aos="fade-up">
+            <div className="row">
+              <div className="col-md-6 d-flex align-items-center">
+                <img src={`${process.env.PUBLIC_URL}/qr.png`} alt="Image 1" style={{ width: '150px', height: '150px', marginRight: '15px' }} />
+                <p class="turq">Join the EDUQUBE community on LinkedIN</p>
+              </div>
+              <div className="col-md-6 d-flex align-items-center">
+                <img src={`${process.env.PUBLIC_URL}/qr.png`} alt="Image 2" style={{ width: '150px', height: '150px', marginRight: '15px' }} />
+                <p class="turq">Join the EDUQUBE community on our Whatsapp channel</p>
+              </div>
+            </div>
+          </div>
+          <br></br>
+          <div class="container aos-init aos-animate contact-container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+              <div class="col-lg-5">
+
+                <div class="info-wrap">
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                      <h3 class="turq">Address</h3>
+                      <p>6 Sturdee Avenue, Rosebank,
+                        Johannesburg, 2196, South Africa</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                      <h3 class="turq">Call Us</h3>
+                      <p>+27 11 912 1000</p>
+                      <p>www.lifeqube.co.za</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                      <h3 class="turq">Email Us</h3>
+                      <p>info@example.com</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                    <div>
+                      <h3 class="turq">Follow Us</h3>
+                      <p>
+                        <a href="https://www.instagram.com/yourusername" class="anchor" target="_blank">
+                          <i class="bi bi-instagram" style={{ width: '150px', height: '150px', marginRight: '15px' }}></i>
+                          Instagram
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <iframe class="imap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4285.673663115493!2d28.039485100000004!3d-26.1478809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c8d03d46401%3A0x93167701f9ade102!2s6%20Sturdee%20Ave%2C%20Rosebank%2C%20Johannesburg%2C%202196!5e1!3m2!1sen!2sza!4v1743632697291!5m2!1sen!2sza"
+                    frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+
+                    <div class="col-md-6">
+                      <label for="name-field" class="pb-2">Your Name / Company Name</label>
+                      <input type="text" name="name" id="name-field" class="form-control" required="" />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email-field" class="pb-2">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email-field" required="" />
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="Industry-field" class="pb-2">Industry</label>
+                      <input type="text" class="form-control" name="Industry" id="Industry-field" required="" />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="subject-field" class="pb-2">Subject</label>
+                      <input type="text" class="form-control" name="subject" id="subject-field" required="" />
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="message-field" class="pb-2">Message</label>
+                      <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <div class="sent-message pb-2">We will be in contact with you shortly</div>
+
+                      <button class="btn-turq btn btn-primary me-2" type="submit">Send Message</button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      </div>
 
     </div>
   );

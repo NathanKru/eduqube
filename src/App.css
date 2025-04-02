@@ -41,3 +41,26 @@
   height: 100%;            /* Ensure it takes up the full height of its container */
   text-align: center;      /* Centers text inside the element */
 }
+
+.imap{
+  width: 100%;
+  height: 270px;
+}
+.contact{
+  background-color: #96969638;
+}
+
+.btn-turq{
+  background-color: #4ec1b2;
+  color: rgb(255, 255, 255) !important;
+  border-color:#4ec1b2 !important;
+}
+
+.dark-background{
+  background-color: #6d6d6d !important;
+  color: white !important;
+}
+
+.anchor{
+  color: black;
+}
