@@ -1,51 +1,190 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Offerings from './Offerings';
+import About from './About';
+import Contact from './Contact';
+
 
 function App() {
   return (
-    <div className="main-body">
-      <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <div class="col-md-3 mb-2 mb-md-0">
-            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-              <img src={`${process.env.PUBLIC_URL}/EQlogo.png`} alt="Your Logo" width="50" height="50"></img>
-            </a>
-          </div>
+        <Router>
+      <div className="main-body">
+        <div className="">
+          <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div className="col-md-3 mb-2 mb-md-0">
+              <Link to="/" className="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src={`${process.env.PUBLIC_URL}/EQlogo.png`} alt="Your Logo" width="50" height="50" />
+              </Link>
+            </div>
 
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 turq">
-            <li><a href="#" class="nav-link px-3 link-secondary ">Home</a></li>
-            <li><a href="#" class="nav-link px-3 turq">Our Offerings</a></li>
-            <li><a href="#" class="nav-link px-3 turq">Why Choose Us</a></li>
-            <li><a href="#" class="nav-link px-3 turq">Pricing</a></li>
-            <li><a href="#" class="nav-link px-3 turq ">Contact Us</a></li>
-          </ul>
+            <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 turq">
+              <li><Link to="/" className="nav-link px-3 link-secondary">Home</Link></li>
+              <li><Link to="/Offerings" className="nav-link px-3 turq">Our Offerings</Link></li>
+              <li><Link to="/About" className="nav-link px-3 turq">About Us</Link></li>
+              <li><a href="#" className="nav-link px-3 turq">Pricing</a></li>
+              <li><Link to="/Contact" className="nav-link px-3 turq">Contact Us</Link></li>
+            </ul>
 
-          <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2 btn-turq">Login</button>
-            <button type="button" class="btn btn-primary btn-turq">Sign-up</button>
-          </div>
-        </header>
-      </div>
-
-      <div class="background-container">
+            <div className="col-md-3 text-end">
+              <button type="button" className="btn btn-outline-primary me-2 btn-turq">Login</button>
+              <button type="button" className="btn btn-primary btn-turq">Sign up</button>
+            </div>
+          </header>
+          <div class="background-container">
         <div class="overlay">
-          {/* <div class="banner-text">
-                  <h2 class="black"> Place holder Banner Swapping ? Carasoul?</h2>
-                  <button>Contact Us Now</button>
-                  <h4>OR</h4>
-                  <button>Find Out More</button>
-                </div> */}
+          <div class="hero-wrapper">
+              <div class="hero-bg">
+                <h1 class="hero-title">Where Data Meets Digital Brilliance.</h1>
+              </div>
+              <div class="subhero-bg">
+                <h2 class="subhero-title">Strategic content creation, next-level analytics, and communication solutions that turn brands into market leaders.</h2>
+              </div>
+              <div class="cta-buttons">
+                <button class="cta primary">Let’s Work Together</button>
+                <button class="cta secondary">See Our Services</button>
+              </div>
+          </div>
         </div>
       </div>
 
-      <div class="content">
-        <h2 class="spacing ">Welcome to <span class="turq">EduQube's</span> Comprehensive Content Creation and Communication Strategy</h2>
-        <h4 class="spacing">Our tailored approach is designed to elevate your brand's presence and engagement through expertly crafted branding,
-          engaging social media content with dynamic marketing.  </h4>
-        <h5 class="spacing turq">#EduQubes #LearningRevolution #EducationForAll #InnovateLearnSucceed</h5>
+          {/* Define Routes */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Offerings" element={<Offerings />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
       </div>
+    </Router>
+  );
+}
+
+const Home = () => (
+<div className="-">
+      {/* <div class="">
+         <h2 class="spacing ">Strategic content creation, next-level analytics, and communication solutions that turn brands into market leaders.</h2> 
+         <h4 class="spacing">Our tailored approach is designed to elevate your brand's presence and engagement through expertly crafted branding,
+          engaging social media content with dynamic marketing. </h4> 
+        <h5 class="spacing turq">#EduQubes #LearningRevolution #EducationForAll #InnovateLearnSucceed</h5>
+      </div> */}
       <br></br>
       <hr></hr>
+
+
+      <div class="content">
+        <h1 class="turq"> Why EduQube?</h1>
+        <br></br>
+        <p> At EduQube, we don’t just post content—we craft stories that resonate, backed by data and designed for growth. 
+          Whether you're launching a new campaign or scaling your digital footprint, we’re your full-service partner in communication innovation.</p>
+        <p>Strategic content creation, next-level analytics, and communication solutions that turn brands into market leaders.</p>
+        <p>Our tailored approach is designed to elevate your brand's presence and engagement through expertly crafted branding,
+          engaging social media content with dynamic marketing. </p>
+          <br></br>
+          <h5 class="spacing turq">#EduQubes #LearningRevolution #EducationForAll #InnovateLearnSucceed</h5>
+      </div>
+
+      <br></br>
+      <hr></hr>
+<div>
+  <div className="container px-4 py-5" id="icon-grid">
+    <h2 className="pb-2 border-bottom turq center-text">Our Core Offerings</h2>
+
+    {/* First Row - 3 Columns */}
+    <div className="row g-4 py-4">
+      <div className="col-md-4 d-flex align-items-start">
+        <i className="fas fa-cogs text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
+        <div>
+          <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Social Media Marketing</h3>
+          <p>Strategic content. Platform expertise. Performance-driven.</p>
+        </div>
+      </div>
+      <div className="col-md-4 d-flex align-items-start">
+        <i className="fas fa-laptop-code text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
+        <div>
+          <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Podcasts & Audio</h3>
+          <p>Launch your voice. Professional production with real impact.</p>
+        </div>
+      </div>
+      <div className="col-md-4 d-flex align-items-start">
+        <i className="fas fa-calendar-alt text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
+        <div>
+          <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Online Reporting Dashboards</h3>
+          <p>Real-time visibility into your brand’s performance.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Second Row - 2 Columns */}
+    <div className="row g-4 py-4">
+      <div className="col-md-6 d-flex align-items-start">
+        <i className="fas fa-home text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
+        <div>
+          <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Web & App Development</h3>
+          <p>Smart, scalable digital solutions tailored to your business.</p>
+        </div>
+      </div>
+      <div className="col-md-6 d-flex align-items-start">
+        <i className="fas fa-tachometer-alt text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
+        <div>
+          <h3 className="fw-bold mb-0 fs-4 text-body-emphasis turq">Content Campaigns</h3>
+          <p>Newsletters, editorials, surveys—all crafted with purpose.</p>
+        </div>
+        </div>
+            {/* <div className="col d-flex align-items-start">
+              <i className="fas fa-toggle-on text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
+              <div>
+                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis turq">Surveys</h3>
+                <p>Strategic survey campaigns designed to gather insights and drive informed decisions.</p>
+              </div>
+            </div>
+            <div className="col d-flex align-items-start">
+              <i className="fas fa-map-marker-alt text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
+              <div>
+                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+              </div>
+            </div>
+            <div className="col d-flex align-items-start">
+              <i className="fas fa-tools text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
+              <div>
+                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+              </div> 
+              </div>*/}
+            
+          </div>
+        </div>
+      </div>
+      <section id="call-to-action" class="call-to-action section dark-background">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10 text-center">
+              <div class="fade-in-box">
+                <h2 class="highlighted-title">What Sets Us Apart</h2>
+                <p> Data-Driven Approach</p>
+                <p> Precision Targeting & Strategy</p>
+                <p> Custom Creative & Visual Excellence</p>
+                <p> Results that Speak for Themselves</p>
+                
+
+                    <p class="cta-intro">Let’s build something extraordinary.</p>  
+                    <p> Call us: <a href="tel:+27845830330" class="contact-link">+27 84 583 0330</a>  |  
+                      <a href="https://wa.me/27845830330" class="contact-link" target="_blank">WhatsApp</a>  | 
+                      <a href="https://www.linkedin.com/" class="contact-link" target="_blank">LinkedIn</a>  | 
+                      <a href="mailto:hello@example.com" class="contact-link">Email</a></p>
+
+                      <button class="cta primary">Book a Free Discovery Call</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      <br></br>
+
       <h3 class="content spacing turq">PodCast / post Previews</h3>
       <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 side-spacing">
         <div className="col">
@@ -97,7 +236,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        <br></br>
         <div className="col">
           <div
             className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -122,9 +261,10 @@ function App() {
           </div>
         </div>
       </div>
-      <hr></hr>
-      <br></br>
 
+      
+
+      <br></br>
       <div class="content">
         <h1 class="turq"> Our Offerings</h1>
         <p>Our services include content creation, audience targeting, analytics tracking, and strategic social media
@@ -138,145 +278,6 @@ function App() {
         <p>EduQube’s clients benefit from data-driven insights, creative execution, and a results-focused approach that ensures
           their brand doesn't just participate in the online conversation but dominates it.</p>
       </div>
-
-      <div>
-        <div className="container px-4 py-5" id="icon-grid">
-          <h2 className="pb-2 border-bottom turq center-text">Pricing Idea</h2>
-
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-cogs text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Social Media Marketing</h3>
-                <p>Empowering your brand with data-driven strategies, innovative content, and cutting-edge digital solutions.</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-laptop-code text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis ">Creating podcasts and audio files</h3>
-                <p>Podcast production, *creating and maintaining podcast channel</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-calendar-alt text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Content research and writing</h3>
-                <p>Expert content research and writing tailored to engage, inform, and drive results.</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-home text-body-secondary flex-shrink-0 me-3 turq" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Development & Graphic Design</h3>
-                <p>Custom systems, applications, impactful graphic design and websites tailored to your business needs.</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-tachometer-alt text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis turq">Online marketing</h3>
-                <p> <strong>Email</strong> Campaigns and / or <strong>Whatsapp</strong> Channel creation, newsletters & automation.</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-toggle-on text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis turq">Surveys</h3>
-                <p>Strategic survey campaigns designed to gather insights and drive informed decisions.</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-map-marker-alt text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-              </div>
-            </div>
-            <div className="col d-flex align-items-start">
-              <i className="fas fa-tools text-body-secondary flex-shrink-0 me-3" style={{ fontSize: "1.75em" }}></i>
-              <div>
-                <h3 className="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section id="call-to-action" class="call-to-action section dark-background">
-
-        <div class="container">
-          <br></br>
-          <div class="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-            <div class="col-xl-9 text-center text-xl-start">
-              <h3 class="turq">Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-          <br></br>
-        </div>
-
-      </section>
-      <br></br>
-      <div>
-        <div class="container">
-            <h2 className="pb-2 turq center-text pb-2">Our Offerings</h2>
-          <div class="row gy-4 align-items-center features-item">
-            <div class="col-md-5 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
-              <img src={`${process.env.PUBLIC_URL}/den1.jpg`} class="img-fluid" alt="" />
-            </div>
-            <div class="col-md-7 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-              <h4>Tailored social media marketing solutions designed to enhance brand visibility, engagement, and lead generation. </h4>
-              <p class="fst-italic">
-              Our services include content creation, audience targeting, analytics tracking, and strategic social media campaigns. With a focus on engaging storytelling, high-quality visuals, and audience interaction, we partner with businesses to establish a strong digital presence.
-              Having a well-planned marketing strategy is crucial for standing out in a competitive market. 
-              </p>
-              <ul>
-                <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check"></i> <span>Ullam est qui quos consequatur eos accusamus.</span></li>
-              </ul>
-            </div>
-          </div>
-          <br></br>
-            <hr></hr>
-            <br></br>
-          <div class="row gy-4 align-items-center features-item">
-            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-              <img src={`${process.env.PUBLIC_URL}/den2.jpg`} class="img-fluid" alt="" />
-            </div>
-            <div class="col-md-7 order-2 order-md-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <h3>Heading</h3>
-              <p class="fst-italic">
-              Without a strategy, social media efforts can feel directionless and ineffective. A structured approach ensures that content resonates with the target audience, maximizes reach, and drives meaningful interactions—ultimately leading to increased brand loyalty and sales. 
-              Our expertise in social media analytics allows us to continuously refine strategies. 
-              </p>
-              <p>EduQube’s clients benefit from data-driven insights, creative execution, and a results-focused approach that 
-              ensures their brand doesn't just participate in the online conversation but dominates it. .</p>
-            </div>
-          </div>
-            <br></br>
-          <div class="row gy-4 align-items-center features-item">
-            <div class="col-md-5 d-flex align-items-center aos-init aos-animate" data-aos="zoom-out">
-              <img src={`${process.env.PUBLIC_URL}/den1.jpg`} class="img-fluid" alt="" />
-            </div>
-            <div class="col-md-7 aos-init aos-animate" data-aos="fade-up">
-              <h3 class="turq pb-2">We don’t just create content—we strategically craft high-impact marketing solutions that drive real results.</h3>
-              <p>With a focus on thoughtful planning, high-quality visuals, and compelling storytelling, we ensure your brand
-                 not only stands out but also resonates with your audience. </p>
-                <p>
-                Our expertise lies in delivering engaging, results-driven content that positions your business ahead of the competition 
-                in an ever-evolving digital landscape.</p>
-            </div>
-          </div>
-          <br></br>
-            <br></br>
-          <h2 className="pb-2 turq center-text pb-2">“Exceptional ideas delivered with exceptional service”</h2>
-
-        </div>
-      </div>
-
-      <br></br>
       <br></br>
       <div>
         <section id="contact" class="contact section">
@@ -397,7 +398,8 @@ function App() {
       </div>
 
     </div>
-  );
-}
+    
+);
 
+    
 export default App;

@@ -1,19 +1,112 @@
+.hero-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
+/* Hero Title Background */
+.hero-bg {
+  background-color: #4ec1b2d0;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: inline-block;
+  animation: slideFadeIn 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+}
 
+/* Hero Title Text */
+.hero-title {
+  margin: 0;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Subheading Background */
+.subhero-bg {
+  background-color: #4ec1b2d3; /* lighter turquoise */
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 1.5rem; /* more spacing on the left */
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideFadeIn 1s ease-out forwards;
+  animation-delay: 2s;
+}
+
+/* Subheading Text */
+.subhero-title {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Reusable animation */
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.cta-buttons {
+  margin-top: 1.5rem;
+  margin-left: 2.5rem; /* slightly more than subhero */
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideFadeIn 1.2s ease-out forwards;
+  animation-delay: 3.5s; /* comes in after subheading */
+}
+
+/* Base CTA button style */
+.cta {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Primary CTA */
+.cta.primary {
+  background-color: #4ec1b2; /* turquoise */
+  color: white;
+}
+
+/* Secondary CTA */
+.cta.secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Hover effects */
+.cta:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
 
 .background-container {
   position: relative;
   height: 60vh; /* Full height of the screen */
-  background-image: url('../public/bg.png'); /* Replace with your image path */
+  background-image: url('../public/eqpocket.png'); /* Replace with your image path */
   background-size: cover;
   background-attachment: fixed; /* Makes the background scroll with content */
   background-position: center;
   overflow: hidden;
 }
-/* .content{
-  margin-left: 3em;
-  margin-right: 3em;
-} */
+
 
 .content {
   padding: 0 20px; /* Adds spacing on the left and right */
@@ -57,10 +150,52 @@
 }
 
 .dark-background{
-  background-color: #6d6d6d !important;
+  background-color: #858585 !important;
   color: white !important;
 }
 
 .anchor{
   color: black;
+}
+
+.dark-background {
+  background-color: #979797; /* or any dark shade */
+  color: white;
+  padding: 2rem 0;
+}
+
+/* Animated turquoise box */
+.fade-in-box {
+  background-color: rgba(64, 224, 208, 0.15); /* transparent turquoise */
+  padding: 2rem;
+  border-radius: 12px;
+  animation: fadeInZoom 2s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.85);
+}
+.a{
+  text-decoration: None !important;
+  color: white !important;
+}
+/* Title */
+.highlighted-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white !important;
+}
+
+/* Paragraph styles */
+.fade-in-box p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
