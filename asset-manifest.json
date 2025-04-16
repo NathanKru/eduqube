@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/eduqube/static/css/main.f56d590c.css",
-    "main.js": "/eduqube/static/js/main.7277efca.js",
+    "main.css": "/eduqube/static/css/main.d79eba93.css",
+    "main.js": "/eduqube/static/js/main.3bf69175.js",
     "static/js/453.03bea0c2.chunk.js": "/eduqube/static/js/453.03bea0c2.chunk.js",
-    "static/media/bg.png": "/eduqube/static/media/bg.c4541dc8c6152ba1495d.png",
+    "static/media/eqpocket.png": "/eduqube/static/media/eqpocket.7e6f36c2867d9b27ede9.png",
     "static/media/logo.svg": "/eduqube/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/eduqube/index.html",
-    "main.f56d590c.css.map": "/eduqube/static/css/main.f56d590c.css.map",
-    "main.7277efca.js.map": "/eduqube/static/js/main.7277efca.js.map",
+    "main.d79eba93.css.map": "/eduqube/static/css/main.d79eba93.css.map",
+    "main.3bf69175.js.map": "/eduqube/static/js/main.3bf69175.js.map",
     "453.03bea0c2.chunk.js.map": "/eduqube/static/js/453.03bea0c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f56d590c.css",
-    "static/js/main.7277efca.js"
+    "static/css/main.d79eba93.css",
+    "static/js/main.3bf69175.js"
   ]
 }
