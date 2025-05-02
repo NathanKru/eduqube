@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/eduqube/static/css/main.d79eba93.css",
-    "main.js": "/eduqube/static/js/main.3bf69175.js",
+    "main.css": "/eduqube/static/css/main.648fcaed.css",
+    "main.js": "/eduqube/static/js/main.6464f079.js",
     "static/js/453.03bea0c2.chunk.js": "/eduqube/static/js/453.03bea0c2.chunk.js",
     "static/media/eqpocket.png": "/eduqube/static/media/eqpocket.7e6f36c2867d9b27ede9.png",
+    "static/media/aboutus.png": "/eduqube/static/media/aboutus.467c02ebfa441d9aa1ba.png",
+    "static/media/offering.png": "/eduqube/static/media/offering.5fa8059c2670ae02dec5.png",
     "static/media/logo.svg": "/eduqube/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/eduqube/index.html",
-    "main.d79eba93.css.map": "/eduqube/static/css/main.d79eba93.css.map",
-    "main.3bf69175.js.map": "/eduqube/static/js/main.3bf69175.js.map",
+    "main.648fcaed.css.map": "/eduqube/static/css/main.648fcaed.css.map",
+    "main.6464f079.js.map": "/eduqube/static/js/main.6464f079.js.map",
     "453.03bea0c2.chunk.js.map": "/eduqube/static/js/453.03bea0c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d79eba93.css",
-    "static/js/main.3bf69175.js"
+    "static/css/main.648fcaed.css",
+    "static/js/main.6464f079.js"
   ]
 }
