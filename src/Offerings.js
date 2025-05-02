@@ -3,7 +3,7 @@ import React from 'react';
 const Offerings = () => {
   return (
     <div>
-      {/* <div class="background-container2">
+      {/* <div class="background-container2 turq">
       </div> */}
       <br></br>
 
